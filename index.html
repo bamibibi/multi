@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>webRCT</title>
+</head>
+<body>
+    <h1>WebRCT</h1>
+    <div class="videos">
+        <span>
+            <h3>Local Stream</h3>
+            <video id="vdo_local" autoplay playsinline></video>
+        </span>
+
+        <span>
+            <h3>Remote Stream</h3>
+            <video id="vdo_remote" autoplay playsinline></video>
+        </span>
+
+    </div>
+    
+    <div class="operation">
+        <h2>1. Start stream</h2>
+        <button id="btn_webCam"> Start stream</button>
+
+        <h2>2. Offer</h2>
+        <button id="btn_offer" disabled>offer</button>
+        <input id="input_offer" />
+
+        <h2>3. Answer</h2>
+        <input  id="input_answer"/>
+        <button id="btn_answer" disabled>Answer</button>
+    </div>
+
+    <script type="module" src="./webRTC.js"> 
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      
+    </script>
+    <script>  
+    const firebaseConfig = {
+        apiKey: "AIzaSyC922ydlHXMez9bVxzBFge3M9eOicfmyKo",
+        authDomain: "webrtc-beginner-1c960.firebaseapp.com",
+        projectId: "webrtc-beginner-1c960",
+        storageBucket: "webrtc-beginner-1c960.appspot.com",
+        messagingSenderId: "631898343084",
+        appId: "1:631898343084:web:623edacee6c03eb75cc109",
+        measurementId: "G-NKLJXDV7VP"
+    };
+    </script>
+</body>
+</html>
